@@ -1,0 +1,83 @@
+/* Desarrolladora Full-Stack Junior | TypeScript, React, Node.js */
+/*
+position: absolute;
+width: 790px;
+height: 25px;
+left: 120px;
+top: 260px;
+
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+
+color: rgba(255, 255, 255, 0.5);
+*/
+
+/*HEADER*/
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+}
+
+.presentation {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto 100px;
+  gap: 20px;
+}
+
+.presentation__title {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.presentation__title span {
+  display: block;
+}
+
+.presentation__text {
+  flex: 1;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 15px 0 30px 120px;
+}
+
+.presentation__habilities {
+  margin: 0;
+}
+
+.presentation__nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.presentation__nav-item {
+  text-decoration: none;
+  list-style: none;
+}
+
+.presentation__photo {
+  box-sizing: border-box;
+  max-width: 300px;
+  height: auto;
+  margin-right: 120px;
+  align-self: flex-start;
+}
+
+/*MAIN*/
+.tools {
+  display: flex;
+  margin: 50px 120px;
+  padding: 0;
+  gap: 180px;
+}
