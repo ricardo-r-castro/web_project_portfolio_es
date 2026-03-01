@@ -76,30 +76,19 @@ color: rgba(255, 255, 255, 0.5);
 }
 
 /*MAIN*/
-.WebDev {
-  margin: 50px 120px;
-  padding: 0;
+.dev {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 120px;
 }
 
-.WebDev__tools {
+.dev__tools {
   display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  gap: 180px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.WebDev__tools__icon-hmtl {
+.dev__tools__icon {
   width: 50px;
-  height: 57px;
-}
-
-.WebDev__tools__icon-css {
-  width: 50px;
-  height: 57px;
-}
-
-.WebDev__tools__icon {
-  width: 50px;
-  height: 50px;
+  height: auto;
 }
