@@ -161,5 +161,16 @@ body {
 }
 
 /*FOOTER*/
-.footer__title {
+.contact {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 120px;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
 }
