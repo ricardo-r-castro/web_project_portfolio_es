@@ -6,8 +6,8 @@
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body class="page">
-    <header class="header">
+  <body>
+    <header>
       <div class="presentation">
         <div class="presentation__text">
           <h1 class="presentation__title">Ricardo <span>Ramírez</span></h1>
@@ -15,30 +15,20 @@
             Desarrollador Principiante | HTML5, CSS3
           </p>
           <p class="presentation__description">
-            Arquitecto con año y medio de experiencia en diseño y gestión de
-            obra, enfocado en la resolución de problemas y el orden técnico.
-            Actualmente, me encuentro en transición hacia el desarrollo web,
-            acumulando dos meses de formación constante en HTML5 y CSS3. Mi
-            objetivo es trasladar mi capacidad de estructuración y atención al
-            detalle del mundo físico al entorno digital, aportando una visión
-            pragmática y funcional en la creación de interfaces mientras
-            continúo expandiendo mis habilidades técnicas.
+            Arquitecto en transición hacia el desarrollo web, enfocado en la
+            estructuración, el detalle y la resolución de problemas. Actualmente
+            fortaleciendo mis habilidades en HTML5 y CSS3 mientras construyo
+            proyectos reales.
           </p>
           <nav class="presentation__nav">
             <ul>
-
               <li class="presentation__nav-item">
                 <a href="#">Descargar CV</a>
               </li>
-
               <li class="presentation__nav-item">
                 <a href="#">Enlace a GitHub</a>
               </li>
-
-              <li class="presentation__nav-item">
-                <a href="#">Hablemos</a>
-              </li>
-
+              <li class="presentation__nav-item"><a href="#">Hablemos</a></li>
             </ul>
           </nav>
         </div>
@@ -49,8 +39,10 @@
         />
       </div>
     </header>
+
     <main class="dev">
       <h2 class="dev__title">Habilidades y herramientas</h2>
+
       <section class="dev__tools">
         <img
           class="dev__tools__icon"
@@ -82,54 +74,70 @@
           src="images/icons/icono-chatGPT.svg"
           alt="logo de chatgpt"
         />
-
       </section>
-      <h2 class="dev__title">Projectos Destacados</h2>
-      <section class="dev__projects">
 
+      <h2 class="dev__title">Projectos Destacados</h2>
+
+      <section class="dev__projects">
         <div class="dev__project__cards">
           <div class="dev__project__card">
-            <img
-              class="dev__project__card-img"
-              src="images/Project 1.png"
-              alt="imágen de proyecto de cafetería"
-            />
+            <div class="dev__project__card-image-wrapper">
+              <img
+                class="dev__project__card-img"
+                src="images/Project 1.png"
+                alt="imágen de proyecto"
+              />
+              <div class="dev__project__card-badges">
+                <img src="images/icons/frame-html.png" alt="html" />
+                <img src="images/icons/frame-css.png" alt="css" />
+              </div>
+            </div>
             <div class="dev__project__card-text">
               <h3 class="dev__project__card-title">
                 Página web de una cafetería
               </h3>
               <p class="dev__project__card-description">
-                Desarrollo de una landing page responsiva
-                para una cafetería siguiendo un brief de diseño.
-                Incluye estructura semántica, maquetación con Flexbox,
-                creación de secciones nuevas y un formulario de contacto
-                funcional.Logro: Implementé desde cero el diseño completo
-                de la página, organicé el proyecto con buenas prácticas
-                y publiqué la versión final utilizando GitHub Pages.
+                Desarrollo de una landing page responsiva para una cafetería
+                siguiendo un brief de diseño. Incluye estructura semántica y
+                maquetación con Flexbox.
               </p>
+              <div class="dev__project__card-links">
+                <a href="#">↗ Demo en vivo</a>
+                <a href="#">GitHub</a>
+              </div>
             </div>
           </div>
 
-                  <div class="dev__project__cards">
           <div class="dev__project__card">
-            <img
-              class="dev__project__card-img"
-              src="images/Project 2.png"
-              alt="imágen de proyecto de cafetería"
-            />
+            <div class="dev__project__card-image-wrapper">
+              <img
+                class="dev__project__card-img"
+                src="images/Project 2.png"
+                alt="imágen de proyecto"
+              />
+              <div class="dev__project__card-badges">
+                <img src="images/icons/frame-js.png" alt="html" />
+                <img src="images/icons/frame-react.png" alt="css" />
+              </div>
+            </div>
             <div class="dev__project__card-text">
-              <h3 class="dev__project__card-title">
-                Mi proyecto
-              </h3>
+              <h3 class="dev__project__card-title">Mi proyecto</h3>
               <p class="dev__project__card-description">
-                Descripcion del proyecto
+                Descripción de proyecto
               </p>
+              <div class="dev__project__card-links">
+                <a href="#">↗ Demo en vivo</a>
+                <a href="#">GitHub</a>
+              </div>
             </div>
           </div>
-
+        </div>
       </section>
     </main>
+    <footer class="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">Contacto</h2>
+      </div>
+    </footer>
   </body>
 </html>
-
-
