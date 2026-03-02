@@ -47,7 +47,6 @@ color: rgba(255, 255, 255, 0.5);
   flex: 1;
   box-sizing: border-box;
   max-width: 800px;
-  margin: 15px 0 30px 120px;
 }
 
 .presentation__habilities {
@@ -71,18 +70,18 @@ color: rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   max-width: 300px;
   height: auto;
-  margin-right: 120px;
   align-self: flex-start;
 }
 
 /*MAIN*/
+/*Section Skills*/
 .dev {
   max-width: 1100px;
   margin: 50px auto;
-  padding: 0 120px;
 }
 
 .dev__tools {
+  margin: 50px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,4 +90,30 @@ color: rgba(255, 255, 255, 0.5);
 .dev__tools__icon {
   width: 50px;
   height: auto;
+}
+/*Section Projects*/
+.dev__projects {
+  margin: 50px auto;
+}
+.dev__project__cards {
+  max-width: 1100px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.dev__project__card-img {
+  display: block;
+  max-width: calc((1100px - 20px) / 2);
+  height: auto;
+  margin: 0;
+}
+
+.dev__project__card-text {
+  background-color: #1c1c1c;
+}
+
+.dev__project__card-text * {
+  margin: 0;
 }
