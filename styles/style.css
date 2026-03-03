@@ -18,7 +18,7 @@ body {
   gap: 40px;
   align-items: flex-start;
   position: relative;
-  z-index: 10;
+  z-index: 20;
 }
 
 .presentation__elipse {
@@ -70,6 +70,7 @@ body {
   font-size: 14px;
   position: relative;
   padding-bottom: 6px;
+  transition: color 0.2s ease;
 }
 
 .presentation__nav-item a::after {
@@ -81,6 +82,10 @@ body {
   height: 3px;
   background: linear-gradient(90deg, #4c1a97, #6d6dff);
   border-radius: 2px;
+}
+
+.presentation__nav-item a:hover {
+  color: rgba(109, 109, 255, 0.5);
 }
 
 .presentation__photo {
@@ -222,6 +227,16 @@ body {
   vertical-align: baseline;
 }
 
+.dev__project__card-links .union:hover {
+  opacity: 0.5;
+  transition: 0.25s ease;
+}
+
+.dev__project__card-links .github:hover {
+  opacity: 0.5;
+  transition: 0.25s ease;
+}
+
 /* FOOTER */
 .contact {
   margin: 0;
@@ -262,6 +277,11 @@ body {
   font-size: 18px;
 }
 
+.contact__email:hover {
+  opacity: 0.5;
+  transition: 0.25s ease;
+}
+
 .contact__socials {
   display: flex;
   justify-content: center;
@@ -271,4 +291,10 @@ body {
 .contact__socials img {
   width: 24px;
   height: 24px;
+}
+
+.contact__socials img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.25s ease;
 }
