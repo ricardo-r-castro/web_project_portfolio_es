@@ -5,7 +5,7 @@
 body {
   margin: 0;
   background-color: #1e1e1e;
-  color: white;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,6 +17,20 @@ body {
   padding: 0 120px;
   gap: 40px;
   align-items: flex-start;
+  position: relative;
+  z-index: 10;
+}
+
+.presentation__elipse {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  background-color: rgba(109, 109, 255, 0.35);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -3;
 }
 
 .presentation__text {
@@ -52,8 +66,21 @@ body {
 
 .presentation__nav-item a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 14px;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.presentation__nav-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #4c1a97, #6d6dff);
+  border-radius: 2px;
 }
 
 .presentation__photo {
@@ -62,11 +89,30 @@ body {
   display: block;
 }
 
+/*Efecto de subrayado*/
+.presentation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 120px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(88, 101, 242, 0.35) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  filter: blur(90px);
+  z-index: 0;
+}
+
 /* MAIN */
 .dev {
   max-width: 1100px;
   margin: 80px auto 100px;
   padding: 0 120px;
+  position: relative;
+  z-index: 10;
 }
 
 .dev__title {
@@ -141,11 +187,13 @@ body {
 
 .dev__project__card-title {
   margin: 0;
+  font-size: 24px;
 }
 
 .dev__project__card-description {
   margin: 0;
   line-height: 1.6;
+  font-size: 18px;
 }
 
 .dev__project__card-links {
@@ -156,14 +204,43 @@ body {
 
 .dev__project__card-links a {
   text-decoration: none;
-  color: white;
-  font-size: 14px;
+  color: #6d6dff;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.dev__project__card-links .github {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.dev__project__card-links img {
+  width: auto;
+  height: 65%;
+  vertical-align: baseline;
 }
 
 /* FOOTER */
 .contact {
   margin: 0;
   text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.contact__container-elipse {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: #6d6dff;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
 }
 
 .contact__container {
