@@ -65,7 +65,7 @@ body {
 /* MAIN */
 .dev {
   max-width: 1100px;
-  margin: 80px auto;
+  margin: 80px auto 100px;
   padding: 0 120px;
 }
 
@@ -160,17 +160,38 @@ body {
   font-size: 14px;
 }
 
-/*FOOTER*/
+/* FOOTER */
 .contact {
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 0 120px;
+  margin: 0;
+  text-align: center;
 }
 
 .contact__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  max-width: 1100px;
   margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.contact__title {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+}
+
+.contact__email {
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #6d6dff;
+  font-size: 18px;
+}
+
+.contact__socials {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.contact__socials img {
+  width: 24px;
+  height: 24px;
 }
