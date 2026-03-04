@@ -1,3 +1,4 @@
+/*RESET*/
 * {
   box-sizing: border-box;
 }
@@ -9,10 +10,46 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+  font-family: ArchivoBlack-Regular;
+  src:
+    url(../fonts/ArchivoBlack-Regular.woff2) format("woof2"),
+    url(../fonts/ArchivoBlack-Regular.woff) format("woof");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src:
+    url(../fonts/OpenSans-Regular.woff2) format("woof2"),
+    url(../fonts/OpenSans-Regular.woff2) format("woof");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans-Semibold;
+  src:
+    url(../fonts/OpenSans-SemiBold.woff2) format("woof2"),
+    url(../fonts/OpenSans-SemiBold.woff) format("woof");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src:
+    url(../fonts/OpenSans-Bold.woff2) format("woof2"),
+    url(../fonts/OpenSans-Bold.woff) format("woof");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* HEADER */
 .presentation {
   display: flex;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 60px auto 100px;
   padding: 0 120px;
   gap: 40px;
@@ -40,7 +77,9 @@ body {
 
 .presentation__title {
   margin: 0 0 20px 0;
-  font-size: 48px;
+  font-size: 72px;
+  font-family: "ArchivoBlack-Regular", "Arial Black", sans-serif;
+  font-weight: 400;
 }
 
 .presentation__title span {
@@ -49,11 +88,17 @@ body {
 
 .presentation__habilities {
   margin: 0 0 20px 0;
+  font-size: 18px;
+  font-family: "OpenSans-Regular", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 400;
 }
 
 .presentation__description {
   margin: 0 0 30px 0;
   line-height: 1.6;
+  font-size: 18px;
+  font-family: "OpenSans-Regular", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 400;
 }
 
 .presentation__nav ul {
@@ -67,21 +112,23 @@ body {
 .presentation__nav-item a {
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
   padding-bottom: 6px;
   transition: color 0.2s ease;
+  font-family: "OpenSans-Semibold", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 600;
 }
 
+/*Efecto de subrayado*/
 .presentation__nav-item a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 3px;
+  height: 15%;
   background: linear-gradient(90deg, #4c1a97, #6d6dff);
-  border-radius: 2px;
 }
 
 .presentation__nav-item a:hover {
@@ -89,42 +136,28 @@ body {
 }
 
 .presentation__photo {
-  width: 300px;
-  height: auto;
+  width: auto;
+  height: 400px;
   display: block;
-}
-
-/*Efecto de subrayado*/
-.presentation::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 120px;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(88, 101, 242, 0.35) 0%,
-    rgba(0, 0, 0, 0) 70%
-  );
-  filter: blur(90px);
-  z-index: 0;
 }
 
 /* MAIN */
 .dev {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 80px auto 100px;
   padding: 0 120px;
   position: relative;
   z-index: 10;
 }
 
+/* Section Skills */
 .dev__title {
-  margin: 60px 0 30px;
+  margin: 100px 0 50px;
+  font-size: 40px;
+  font-family: "ArchivoBlack-Regular", "Arial Black", sans-serif;
+  font-weight: 400;
 }
 
-/* Section Skills */
 .dev__tools {
   display: flex;
   justify-content: space-between;
@@ -137,10 +170,6 @@ body {
 }
 
 /* Section Projects */
-.dev__projects {
-  margin-top: 40px;
-}
-
 .dev__project__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -160,7 +189,7 @@ body {
 
 .dev__project__card-img {
   width: 100%;
-  height: 240px;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -175,7 +204,7 @@ body {
 
 .dev__project__card-badges img {
   width: 28px;
-  height: 28px;
+  height: auto;
   background: transparent;
   padding: 4px;
   border-radius: 6px;
@@ -193,31 +222,36 @@ body {
 .dev__project__card-title {
   margin: 0;
   font-size: 24px;
+  font-family: "OpenSans-Bold", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 600;
 }
 
 .dev__project__card-description {
   margin: 0;
   line-height: 1.6;
   font-size: 18px;
+  font-family: "OpenSans-Regular", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 400;
 }
 
 .dev__project__card-links {
   margin-top: auto;
   display: flex;
   gap: 20px;
+  font-family: "OpenSans-Regular", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 400;
 }
 
 .dev__project__card-links a {
   text-decoration: none;
   color: #6d6dff;
-  font-size: 18px;
+  font-size: 16px;
   vertical-align: middle;
 }
 
 .dev__project__card-links .github {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
   vertical-align: middle;
 }
 
@@ -265,8 +299,10 @@ body {
 }
 
 .contact__title {
-  margin: 0 0 20px 0;
-  font-size: 32px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-family: "ArchivoBlack-Regular", "Arial Black", sans-serif;
+  font-weight: 400;
 }
 
 .contact__email {
@@ -275,6 +311,8 @@ body {
   text-decoration: none;
   color: #6d6dff;
   font-size: 18px;
+  font-family: "OpenSans-Regular", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 400;
 }
 
 .contact__email:hover {
@@ -290,11 +328,14 @@ body {
 
 .contact__socials img {
   width: 24px;
-  height: 24px;
+  height: auto;
 }
 
 .contact__socials img:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: 0.25s ease;
+}
+
+@media screen and (max-width: 1100px) {
 }
