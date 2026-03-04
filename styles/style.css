@@ -389,6 +389,10 @@ body {
     margin: 0;
     align-items: stretch;
   }
+  .dev__project__card-links img {
+    width: auto;
+    height: 50%;
+  }
 
   /*Footer*/
   .contact__container {
@@ -400,4 +404,95 @@ body {
 
 /*Mobile*/
 @media screen and (max-width: 320px) {
+  .presentation {
+    max-width: 280px;
+    padding: 20px 20px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 30px;
+  }
+  .presentation__title {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+  .presentation__habilities {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .presentation__description {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .presentation__nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+  }
+  .presentation__photo {
+    max-width: 260px;
+    height: auto;
+  }
+
+  /*Main*/
+  .dev {
+    max-width: 280px;
+    margin: 0;
+    padding: 60px 20px;
+    align-self: center;
+  }
+  .dev__title {
+    font-size: 28px;
+    margin: 60px 0 30px;
+  }
+  .dev__tools {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .dev__tools__icon {
+    width: 30px;
+    height: auto;
+  }
+  .dev__project__card-text {
+    padding: 20px;
+  }
+  .dev__project__card-title {
+    font-size: 20px;
+    margin: 0;
+  }
+  .dev__project__card-description {
+    font-size: 16px;
+    margin: 10px 0 20px;
+  }
+  .dev__project__card-links {
+    gap: 10px;
+  }
+  .dev__project__card-links a {
+    font-size: 16px;
+    margin: 0;
+  }
+  .dev__project__card-links img {
+    width: auto;
+    height: 35%;
+  }
+
+  /*Footer*/
+  .contact__container {
+    margin: 0;
+    padding: 0;
+    max-width: 280px;
+  }
+  .contact__title {
+    font-size: 28px;
+  }
+  .contact__socials {
+    gap: 40px;
+  }
 }
