@@ -10,4 +10,5 @@ Por ultimo hay una sección de contacto para justamente poder comunicarse conmig
 Las tecnologisa que se utilizaron para este proyectofueron unicamente de html y css:
 Flexbox, grids, gradiantes, hovers, posicionamiento absoluto y relativo
 
-links a GitHub.
+link
+https://ricardo-r-castro.github.io/web_project_portfolio_es/
